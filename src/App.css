@@ -1,38 +1,177 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #000 !important;
+    color: white !important;
+    font-family: Verdana, Geneva, sans-serif !important;
+  }
+
+body .bg-dark {
+  background-color: #000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  margin: 15px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-container p {
+  color: grey;
+  font-size: small;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-bgcolor {
+  background-color: #fa8231;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  src: url(assets/fonts/DancingScript-Bold.ttf);
+  font-family: Dancing Script;
+}
+
+.handwriting {
+  font-family: 'Dancing Script', cursive;
+}
+
+.greyFont {
+  color: #bdbdbd;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 18%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.content-wrap {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal {
+  color: grey;
+}
+
+.year {
+  padding-right: 1em;
+  font-weight: bold;
+}
+
+.photoBiografie {
+  height: 200px;
+}
+
+.genreBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.genreHeight {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+}
+
+.playerBottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+#walter-matthau {
+  background-position: 0px -30px;
+}
+
+#asia {
+  background-position: 0px -50px;
+}
+
+#kiss {
+  background-position: 0px -50px;
+}
+
+.adventure {
+  background-image: url("./assets/adventure.jpg");
+}
+
+.animation {
+  background-image: url("./assets/animation.jpg");
+}
+
+.action {
+  background-image: url("./assets/action.jpg");
+}
+
+.doku {
+  background-image: url("./assets/doku.jpg");
+}
+
+.drama {
+  background-image: url("./assets/drama.jpg");
+}
+
+.erotic {
+  background-image: url("./assets/erotic.jpg");
+}
+
+.fantasy {
+  background-image: url("./assets/fantasy.jpg");
+}
+
+.horror {
+  background-image: url("./assets/horror.jpg");
+}
+
+.comedy {
+  background-image: url("./assets/comedy.jpg");
+}
+
+.crime {
+  background-image: url("./assets/crime.jpg");
+}
+
+.love {
+  background-image: url("./assets/love.jpg");
+}
+
+.music {
+  background-image: url("./assets/music.jpg");
+}
+
+.science-fiction {
+  background-image: url("./assets/science-fiction.jpg");
+}
+
+.other {
+  background-image: url("./assets/other.jpg");
+}
+
+.thriller {
+  background-image: url("./assets/thriller.jpg");
+}
+
+.western {
+  background-image: url("./assets/western.jpg");
 }
