@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 body {
-    background-color: #000 !important;
-    color: white !important;
+    /*background-color: #000 !important;
+    color: white !important;*/
     font-family: Verdana, Geneva, sans-serif !important;
   }
 
@@ -14,13 +14,16 @@ body .bg-dark {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-container > div {
-  margin: 15px;
-  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 460px;;
   text-align: center;
+  padding: 10px;
 }
 
 .flex-container p {
@@ -28,8 +31,24 @@ body .bg-dark {
   font-size: small;
 }
 
+.float-item {
+  width: 100%;
+  height: auto;
+}
+
+.photoBiografie {
+  width: 160px;
+  float: right;
+  margin-left: 10px;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+/* Navbar */
 .navbar-bgcolor {
-  background-color: #fa8231;
+  background-color: #343a40;
 }
 
 @font-face {
@@ -41,8 +60,21 @@ body .bg-dark {
   font-family: 'Dancing Script', cursive;
 }
 
-.greyFont {
+/* Impressum und Datenschutz */
+.grey-font {
   color: #bdbdbd;
+}
+
+.grey-font h1 {
+  font-size: 40px;
+}
+
+.grey-font h3 {
+  font-size: 25px;
+}
+
+.grey-font p {
+  text-align: justify;
 }
 
 .player-wrapper {
@@ -75,10 +107,6 @@ body .bg-dark {
   font-weight: bold;
 }
 
-.photoBiografie {
-  height: 200px;
-}
-
 .genreBackground {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
@@ -87,8 +115,10 @@ body .bg-dark {
 
 .genreHeight {
   position: relative;
+  max-width: 100%;
   height: 200px;
   background-size: cover;
+  color: white;
 }
 
 .playerBottom {
@@ -105,6 +135,10 @@ body .bg-dark {
 }
 
 #asia {
+  background-position: 0px -50px;
+}
+
+#peru {
   background-position: 0px -50px;
 }
 
@@ -125,7 +159,7 @@ body .bg-dark {
 }
 
 .doku {
-  background-image: url("./assets/doku.jpg");
+  background-image: url("./assets/docu.jpg");
 }
 
 .drama {

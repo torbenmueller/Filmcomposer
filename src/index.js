@@ -24,10 +24,10 @@ const Header = props => {
       <Navbar.Brand href="/">
       <img
         src={logo}
-        width="30"
-        height="30"
+        width="40"
+        height="40"
         className="d-inline-block align-top"
-        alt="React Bootstrap logo"
+        alt="Torben Jan Müller logo"
       />
     </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
